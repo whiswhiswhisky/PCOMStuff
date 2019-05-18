@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        #click {
+            background-color: rgb(49, 81, 189); /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            margin: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 35px;
+            cursor: pointer;
+            
+          }
+          /* #words {
+              
+          } */
+
+/* body{position:relative;} */
+          #pageWrap {
+              text-align: center; 
+              /* position:absolute; */
+              margin:50% 0px;
+              transform:  translate(0%, -300%);
+
+          }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <a href="https://api.23andme.com/authorize/?redirect_uri=http://localhost:5000/receive_code/&response_type=code&client_id=ad5e80182caf937c0858c0ad8584b3f2&scope=report:all">Connect with 23andMe</a> -->
+    <div id="pageWrap"> 
+        <div id = "words" >Take the Smart Pregnancy Test to receive a report for your pregnancy decision based on the authoritative analysis on your DNA data.</div>
+        <span>     </span>
+        <!-- <button id = "click" onclick="window.location='https://api.23andme.com/authorize/?redirect_uri=http://localhost:5000/receive_code/&response_type=code&client_id=ad5e80182caf937c0858c0ad8584b3f2&scope=genomes';">Pre-Mom Test</button> -->
+        <button id = "click" onclick="window.location='https://api.23andme.com/authorize/?redirect_uri=http://localhost:5000/receive_code/&response_type=code&client_id=ad5e80182caf937c0858c0ad8584b3f2&scope=report:all';">Pre-Mom Test</button>
+    </div>
+</body>
+</html>
